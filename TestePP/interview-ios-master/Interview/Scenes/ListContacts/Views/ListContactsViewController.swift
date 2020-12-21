@@ -57,8 +57,8 @@ class ListContactsViewController: UIViewController, UITableViewDataSource, UITab
         
 
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.orange]
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 52/255.0, green: 192/255.0, blue: 94/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.topItem?.title = "Lista de contatos"
 
 
@@ -142,10 +142,8 @@ class ListContactsViewController: UIViewController, UITableViewDataSource, UITab
                     print(error)
                     
                     let alert = UIAlertController(title: "Ops, ocorreu um erro", message: error.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Tentar novamente", style: .default, handler: {action in self.loadData()}))
                     self.present(alert, animated: true)
-                    self.activity.stopAnimating()
-                    refreshControl.endRefreshing()
                     return
                 }
 

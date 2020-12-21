@@ -32,18 +32,18 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "fetchContacts(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
-                  uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68 - edcfa36fa5b61926"
+                  uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68 - a021f52ac4e9e408"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Interview.ListContactService.fetchContacts(completion: (Swift.Optional&lt;Swift.Array&lt;Interview.Contact&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Interview"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jshamali/Downloads/interview-ios-master/Interview/Scenes/ListContacts/Services/ListContactsService.swift"
+                  urlString = "file:///Users/jshamali/Downloads/PP/PP/TestePP/interview-ios-master/Interview/Scenes/ListContacts/Services/ListContactsService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -51,14 +51,14 @@
                   offsetFromSymbolStart = "967">
                </Location>
                <Location
-                  uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68 - 540f9a09d4e82eac"
+                  uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68 - 19e1cc4cb5b7d3c6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Interview.ListContactService.fetchContacts(completion: (Swift.Optional&lt;Swift.Array&lt;Interview.Contact&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Interview"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jshamali/Downloads/interview-ios-master/Interview/Scenes/ListContacts/Services/ListContactsService.swift"
+                  urlString = "file:///Users/jshamali/Downloads/PP/PP/TestePP/interview-ios-master/Interview/Scenes/ListContacts/Services/ListContactsService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -80,8 +80,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "fetchContacts(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
