@@ -8,7 +8,7 @@ class Contact: Codable {
     var photoURL = ""
     var img: UIImage?
     
-    init(id: Int, name: String, photoURL: String, img: UIImage) {
+    init(id: Int, name: String, photoURL: String, img: UIImage?) {
         self.id = id
         self.name = name
         self.photoURL = photoURL

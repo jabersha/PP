@@ -20,7 +20,6 @@ var imagem:[UIImage?] = []
 */
 
 class ListContactService {
-    private var list = [Contact]()
     
     
     func fetchContacts(completion: @escaping ([Contact]?, Error?) -> Void) {
@@ -42,10 +41,9 @@ class ListContactService {
                 do {
                     let decoder = JSONDecoder()
                     let decoded = try decoder.decode([Contact].self, from: jsonData)
-                    self.list = decoded
 
                     self.deleteAllRecords()
-                    self.saveOffline()
+                    self.saveOffline(contatos: decoded)
                     let lista = self.getContacts()
                     
                     if !UserDefaults.standard.bool(forKey: CacheKeys.FIRST_ACESS.rawValue){
@@ -61,10 +59,10 @@ class ListContactService {
         }
     }
     
-    func saveOffline(){
+    func saveOffline(contatos: [Contact]){
         if let entity = NSEntityDescription.entity(forEntityName: "List", in: context) {
             var index = 0
-            for contacts in list{
+            for contacts in contatos{
                 let newEntity = NSManagedObject(entity: entity, insertInto: context)
                 index += 1
                 
@@ -95,18 +93,22 @@ class ListContactService {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "List")
         request.returnsObjectsAsFaults = false
         var lista = [Contact]()
+        var img = UIImage()
         do{
             let result = try! context.fetch(request)
             for data in result as! [NSManagedObject]{
                 let imagem = data.value(forKey: "img")
-                let img = UIImage(data: imagem as! Data)
+                if imagem != nil{
+                    img = UIImage(data: imagem as! Data)!
+                }
+
                 
-                lista.append(Contact.init(id: data.value(forKey: "id") as! Int , name: data.value(forKey: "name") as! String, photoURL: data.value(forKey: "photoURL") as? String ?? "", img: img! ))
+                lista.append(Contact.init(id: data.value(forKey: "id") as! Int , name: data.value(forKey: "name") as! String, photoURL: data.value(forKey: "photoURL") as? String ?? "", img: img ))
                 
 
             }
         }
-        print("Total de items do banco\(lista.count)")
+        print("Total de items do banco \(lista.count)")
         return lista
         
         

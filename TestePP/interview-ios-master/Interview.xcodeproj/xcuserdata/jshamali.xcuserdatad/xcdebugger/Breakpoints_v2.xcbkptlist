@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FC0940B5-6D60-48CA-9707-24A727AC0D8C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Interview/Scenes/ListContacts/Views/ListContactsViewController.swift"
@@ -24,16 +24,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Interview/Scenes/ListContacts/Services/ListContactsService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchContacts(completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "1F8A0405-0F73-46C5-B8EA-0AA0FF25CB68 - a021f52ac4e9e408"
@@ -72,16 +72,96 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BFC93A2B-D2E3-4C48-A07C-84F1F8EF8BFE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Interview/Scenes/ListContacts/Services/ListContactsService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchContacts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92D95F21-F247-454A-9003-79ACF572FEFC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InterviewTests/ListContactServiceTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "testGetListExpectedURLHostAndPath()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "92D95F21-F247-454A-9003-79ACF572FEFC - 5246e2bbbb5c0bbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InterviewTests.ListContactServiceTests.testGetListExpectedURLHostAndPath() -&gt; ()"
+                  moduleName = "InterviewTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jshamali/Downloads/PP/PP/TestePP/interview-ios-master/InterviewTests/ListContactServiceTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "92D95F21-F247-454A-9003-79ACF572FEFC - 22cfe6ef8d90575f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Interview.Contact&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in InterviewTests.ListContactServiceTests.testGetListExpectedURLHostAndPath() -&gt; ()"
+                  moduleName = "InterviewTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jshamali/Downloads/PP/PP/TestePP/interview-ios-master/InterviewTests/ListContactServiceTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC65152D-9686-4296-9FA8-A438DB1F58B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InterviewTests/ListContactServiceTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "testSaveAndGetCoreData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32EEE40F-512B-44F9-B461-BFE69801A449"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Interview/Scenes/ListContacts/Services/ListContactsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "getContacts()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
